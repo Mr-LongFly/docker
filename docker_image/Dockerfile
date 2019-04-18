@@ -16,6 +16,7 @@ RUN apt-get update \
   && chmod 777 gost.sh \
   && export TERM=$TERM \
   && bash gost.sh \
+  && rm -rf gost* \
   && exit 0
 # install ssr
 RUN mkdir /usr/local/ssr \
@@ -24,6 +25,7 @@ RUN mkdir /usr/local/ssr \
   && chmod +x shadowsocksR.sh \
   && export TERM=$TERM \
   && bash shadowsocksR.sh 2>&1 | tee shadowsocksR.log \
+  && && rm -rf shadowsocksR.sh \
   && exit 0 \
 # ssr script
 # fake log
