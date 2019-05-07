@@ -17,6 +17,9 @@
             ]
         }
     },
+    "streamSettings": {
+        "network":"ws"
+      },
     "outbound": {
         "protocol": "freedom",
         "settings": {}
